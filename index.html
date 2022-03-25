@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="./css/global.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+        <header>
+        <h1>Restaurants</h1>
+        </header>
+        <!--<main>
+        <div class="grid">
+            <article class="restaurant">
+            <h2>
+                <a href="restaurant.html?id=1">Luke's Diner</a>
+            </h2>
+            <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2020/03/6-Vintage-Tools-as-Decor.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5" 
+                    alt="Luke's diner interior"/>
+            </article>
+            <article class="restaurant">
+            <h2>
+                <a href="restaurant.html?id=2">Nando's</a>
+            </h2>
+            <img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210818050108-nandos-file-2020.jpg" 
+                    alt="Nando's store front"/>
+            </article>
+            <article class="restaurant">
+            <h2>
+                <a href="restaurant.html?id=3">Mehmet's</a>
+            </h2>
+            <img src="https://b.zmtcdn.com/data/pictures/8/6111128/cdd75f7e57d6d7fb093f8863c0ca410d.jpg" 
+                    alt="Mehmet's cafe store front"/>
+            </article>
+            <article class="restaurant">
+                <h2>
+                <a href="restaurant.html?id=4">T.G.I Friday's</a>
+                </h2>
+                <img src="https://www.hospitalityandcateringnews.com/wp-content/uploads/2020/03/tgi-fridays-executive-team-2020.jpeg" 
+                    alt="TGI Friday's store front"/>
+            </article>
+
+      </div>
+    </main>-->
+    <div id="app">Fetching restaurant data...</div>
+    <form onsubmit="event.preventDefault();"> <!--stops the page from reloading with raw code of new submission-->
+        <label for="name">Restaurant name</label> 
+        <input id="name" name="name" required/> <!--this creates the section where the user will input the restaurant name
+        it's been made 'required' so user can't submit without filling it out -->
+        <label for="imageURL">Image URL</label>
+        <input id="imageURL" name="imageURL" type="url" required/> <!--type=url makes it so that the input in this field is checked 
+        to make sure it's actually is a url-->
+        <button>Create Restaurant</button>
+    </form>
+    </div>
+    <script src="index.js" type="module"></script> <!--this finds the index.js file and recognises it as a module therefore we can share and receive functionalities from the file-->
+  </body>
+</html>
