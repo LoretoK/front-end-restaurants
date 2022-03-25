@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'Palette Mosaic', cursive;
+}
+
+h2{
+    margin: 10px;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(blue, white);
+}
+
+img{
+    width: 70%;
+    padding:40px;
+}
+
+.menus{
+    column-count: 5;
+    column-gap: 10px;
+}
+
+article{
+    margin: auto;
+    max-width: 80%;
+    height: 270px;
+}
+
+li{
+    font-size: x-large;
+}
+
+.menu-lukes{
+    background-color: #9ec4f0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236d26de' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    box-shadow:1px 3px 5px 0px blue;
+    border-style: groove;
+}
+
+.menu > h2{
+    text-align: center;
+}
